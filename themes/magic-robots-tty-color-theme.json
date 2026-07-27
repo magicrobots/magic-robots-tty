@@ -77,9 +77,9 @@
 		"editor.background": "#000000",
 		"editor.foreground": "#44ff00",
 		"editorLineNumber.foreground": "#00620b",
-		"editorCursor.foreground": "#ff0000",
-		"editorCursor.background": "#000000",
-		"editor.selectionBackground": "#006b47b3",
+		"editorCursor.foreground": "#00ff33",
+		"editorCursor.background": "#00180a",
+		"editor.selectionBackground": "#006b4790",
 		"editor.inactiveSelectionBackground": "#006b4780",
 		"editorWhitespace.foreground": "#e3e4e229",
 		"editor.selectionHighlightBackground": "#006b4740",
@@ -119,8 +119,8 @@
 		"editorGroup.border": "#91ff93",
 		"diffEditor.insertedTextBackground": "#00ff4d40",
 		"diffEditor.removedTextBackground": "#ff3b3b40",
-		"diffEditor.insertedLineBackground": "#00ff4d1f",
-		"diffEditor.removedLineBackground": "#ff3b3b1f",
+		"diffEditor.insertedLineBackground": "#006b4718",
+		"diffEditor.removedLineBackground": "#ff3b3b18",
 		"diffEditor.diagonalFill": "#4d4d4d66",
 		"diffEditor.border": "#00d32b88",
 		"diffEditorGutter.insertedLineBackground": "#00ff4d26",
@@ -266,8 +266,8 @@
 		"terminal.selectionBackground": "#006b47d9",
 		"terminal.inactiveSelectionBackground": "#006b47a0",
 		"terminal.border": "#01b72bb3",
-		"terminalCursor.background": "#e50000", // background of the cursor (usually same as foreground)
-		"terminalCursor.foreground": "#b10a0a", // color of the block cursor
+		"terminalCursor.background": "#00180a", // background of the cursor (usually same as foreground)
+		"terminalCursor.foreground": "#00ff33", // color of the block cursor
 		// ANSI Colors (used for syntax in terminal output)
 		"terminal.ansiBlack": "#000000",
 		"terminal.ansiRed": "#008a23",
