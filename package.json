@@ -1,12 +1,12 @@
 {
-  "name": "functional-matrix",
-  "displayName": "Functional Matrix - Clubcleaver",
-  "description": "Greens with actual usage considerations, tested for GO, JS, TS, React, HTML, CSS, Tailwind",
+  "name": "magic-robots-tty",
+  "displayName": "Magic Robots TTY",
+  "description": "Green-on-black terminal theme with high-contrast, actually-readable diffs. Tested for GO, JS, TS, React, HTML, CSS, Tailwind.",
   "icon": "./images/functional_matrix_logo.png",
-  "version": "1.0.1",
-  "publisher": "clubcleaver",
+  "version": "1.1.0",
+  "publisher": "magicrobots",
   "author": {
-    "name": "clubcleaver"
+    "name": "magicrobots"
   },
   "license": "MIT",
   "engines": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/clubcleaver/functional-matrix.git"
+    "url": "https://github.com/magicrobots/magic-robots-tty.git"
   },
   "categories": [
     "Themes"
@@ -22,9 +22,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Functional Matrix - Clubcleaver",
+        "label": "Magic Robots TTY",
         "uiTheme": "vs-dark",
-        "path": "./themes/functional-matrix-color-theme.json"
+        "path": "./themes/magic-robots-tty-color-theme.json"
       }
     ]
   }
