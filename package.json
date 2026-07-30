@@ -2,7 +2,7 @@
   "name": "magic-robots-tty",
   "displayName": "Magic Robots TTY",
   "description": "Green-on-black terminal theme with high-contrast, actually-readable diffs. Tested for GO, JS, TS, React, HTML, CSS, Tailwind.",
-  "icon": "./images/functional_matrix_logo.png",
+  "icon": "./images/icon.png",
   "version": "1.1.0",
   "publisher": "magicrobots",
   "author": {

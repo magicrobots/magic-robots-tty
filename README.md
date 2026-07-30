@@ -1,63 +1,55 @@
-# functional-matrix README
+# Magic Robots TTY
 
-A usable, Matrix-inspired VS Code theme for focused developers.
+A dark, monochromatic green VS Code theme built for **long reading sessions and honest diffs**.
+
+Fork of [Functional Matrix](https://github.com/clubcleaver/functional-matrix) by clubcleaver, rebalanced for daily driving on large codebases: readable diff/merge contrast, de-yellowed greens, and a quiet interface that gets out of the way of the code.
 
 ---
 
-![Functional Matrix Screenshot](./images/FunctionalMatrix-with-command-pallete.png)
+## Why this fork exists
 
-![Functional Matrix Screenshot - JS](./images/FunctionalMatrix_JS.png)
+The original Functional Matrix nailed the aesthetic but made a few colors that mattered for real work indistinguishable — most notably, **inserted and deleted lines in diffs were both green**, so PR review was a guessing game. This fork keeps the monochrome-green spirit and fixes the parts that got in the way of using it.
 
-![Functional Matrix Screenshot - JS](./images/FunctionalMatrix-general-interface.png)
+## What's different from Functional Matrix
 
-## The Philosophy
+- **Readable diffs.** Deletions are red, insertions are green, full-line backgrounds are set (not just inline character ranges), and the change gutter, minimap, and scrollbar overview ruler all agree.
+- **Readable 3-way merges.** `current` / `incoming` / `common` are green / cyan / gray instead of near-identical shades, and the newer `mergeEditor.*` keys are set for VS Code's built-in merge editor.
+- **De-yellowed palette.** Every color that leaned yellow has been shifted so blue ≥ red — brighter tokens read as green or off-white, never mustard.
+- **Softer interface, louder code.** Sidebar, status bar, breadcrumbs, and line numbers were dimmed a step; the editor foreground is what your eye lands on first.
+- **Symmetric top/bottom accents.** The active editor tab and the status bar share a common accent color and highlight stripe, sandwiching the editor.
+- **Subtle green background.** `#010603` instead of pure black — reads better on macOS displays that render pure `#000000` as a hard black slab.
+- **Green selection.** No more red text selection. Selection, find highlights, word occurrences, and hover highlights all live in a coherent muted-green family.
+- **Green block cursor by default.** Set `"editor.cursorStyle": "block"` in your user settings to enable the block style — the theme colors the cursor bright green either way.
 
-Functional Matrix is a dark, monochromatic green theme inspired by the iconic digital rain of _The Matrix_.
+## Install
 
-Unlike purely aesthetic themes, Functional Matrix is built for **productivity and long-term usability**, especially on large codebases and complex projects. It uses a consistent green color palette to reduce visual noise and help you stay in the flow.
+From the Marketplace (once published):
 
-The design philosophy is simple: keep the core code clean and uniform, but make the most important architectural elements stand out. To achieve this, comments are rendered in a distinct gray to push them to the background, while the syntax highlighting is specifically tuned to make key constructs pop:
+1. Open Extensions, search for **Magic Robots TTY**, click **Install**.
+2. `Cmd+K Cmd+T` (or `Ctrl+K Ctrl+T`) → select **Magic Robots TTY**.
 
-- **Function Calls**
-- **Keywords & Control Flow**
-- **Type Definitions**
+From a `.vsix`:
 
-The result is a theme that is both stylish and highly practical, allowing you to easily write complex code while maintaining focus.
+```bash
+code --install-extension magic-robots-tty-<version>.vsix
+```
 
-## Key Features
+## Recommended companion settings
 
-- **Monochromatic Green Palette**: A single-hue color scheme that's easy on the eyes and minimizes distraction.
-- **High-Contrast Comments**: Gray comments provide clear separation from the functional code, letting you focus on what's executing.
-- **Optimized for Key Constructs**: Syntax rules are tailored to draw your attention to the most important parts of your code.
-- **Designed for Usability**: Created with the goal of being a daily driver for developers working on large, intricate projects.
-
-## Optimized For
-
-This theme has been tuned with specific support for a variety of languages to ensure key syntax is highlighted effectively. While it will work for most languages, it includes specific optimizations for:
-
-- **Frontend:** JavaScript, TypeScript, JSX/TSX, HTML, CSS, SCSS, LESS
-- **Backend:** Go, Python, Rust, Java, C#, PHP
-- **General:** C/C++, SQL, Shell Scripts, Markdown, JSON, YAML
-
-## Installation
-
-1.  Open the **Extensions** sidebar in VS Code.
-2.  Search for `Functional Matrix`.
-3.  Click **Install**.
-4.  Open the Command Palette (`Ctrl+Shift+P`), type `Color Theme` and select **Functional Matrix**.
-
-Alternatively, to install from a `.vsix` file:
-
-1.  In the **Extensions** view, click the **(...)** menu in the top-right corner.
-2.  Select **Install from VSIX...**
-3.  Locate and select the `functional-matrix-x.x.x.vsix` file.
+```jsonc
+{
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "boundary",
+  "editor.bracketPairColorization.enabled": true,
+  "workbench.colorTheme": "Magic Robots TTY"
+}
+```
 
 ## Feedback
 
-Found an issue or have a suggestion? Please open an issue on the [GitHub repository](https://github.com/clubcleaver/functional-matrix).
+Issues and PRs welcome at [github.com/magicrobots/magic-robots-tty](https://github.com/magicrobots/magic-robots-tty/issues).
 
----
+## Credits
 
-Enjoy the focus.
-
-**License:** MIT
+Based on **[Functional Matrix](https://github.com/clubcleaver/functional-matrix)** by clubcleaver. Released under the same MIT license (see [LICENSE](./LICENSE)).
