@@ -42,7 +42,7 @@ code --install-extension magic-robots-tty-<version>.vsix
   "editor.cursorBlinking": "solid",
   "editor.renderWhitespace": "boundary",
   "editor.bracketPairColorization.enabled": true,
-  "workbench.colorTheme": "Magic Robots TTY"
+  "workbench.colorTheme": "Magic Robots TTY",
 }
 ```
 

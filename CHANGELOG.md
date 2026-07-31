@@ -7,6 +7,7 @@ Format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 ## [1.2.0] — Unreleased
 
 ### Changed
+
 - Selection colors: red → muted dark green across editor, minimap, and terminal (`selectionBackground`, `inactiveSelectionBackground`).
 - Word / hover / occurrence highlights unified in a coherent green family (was blue/teal defaults).
 - Find match colors: current match keeps bright green; other matches moved from orange-red to a subtle dim green with a faint outline.
@@ -21,6 +22,7 @@ Format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 - Command palette selected row darkened so match-highlight characters stay readable.
 
 ### Fixed
+
 - `markup.deleted.diff` was green (`#219b00`), nearly identical to `markup.inserted.diff`. Deletions now render red — patch/diff view is finally usable.
 - `diffEditor.insertedLineBackground` / `removedLineBackground` were unset, so only inline character ranges were tinted. Whole changed lines now tint correctly.
 - `diffEditorGutter`, `diffEditorOverview`, and `editorOverviewRuler.{added,modified,deleted}Foreground` were unset — the scrollbar / minimap change indicators now match the diff palette.
@@ -30,6 +32,7 @@ Format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 ## [1.1.0] — 2026-07-27
 
 ### Changed
+
 - Forked and rebranded from Functional Matrix as **Magic Robots TTY**.
 - Renamed theme file to `magic-robots-tty-color-theme.json`.
 - Bumped publisher/author to `magicrobots`; repository points at this fork.
